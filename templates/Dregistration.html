@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>DONOR REGISTRATION</title>
+</head>
+
+<body>
+    <h1>Welcome Donor</h1>
+    <h2>To donate blood register here..</h2>
+    <fieldset>
+        <form action="/insert_donor" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="enter your name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date"  name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Blood group:</td>
+                    <td><SELECT name="blood_group">
+                    <option value="select">select blood type</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    </SELECT></td>
+                </tr>
+                <tr>
+                    <td>Last donated:</td>
+                    <td><input type="date" name="last_donated"></td>
+                </tr>
+                <tr>
+                    <td>Phone no:</td>
+                    <td><input type="number" placeholder="enter your phone no" name="phone_no"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="enter your email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="enter your password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Area:</td>
+                    <td><input type="text" placeholder="enter your area" name="area"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit"></td>
+                    <td><input type="reset" name="refresh"></td>
+
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <h2><a href="/">HOME</a></h2>
+</body>
+
+</html>

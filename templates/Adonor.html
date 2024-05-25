@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>donor details</title>
+    </head>
+    <body>
+        <h2>DONOR DETAILS</h2>
+
+        <fieldset>
+            <table border="1">
+                <tr>
+                    <td>NAME</td>
+                    <td>DOB</td>
+                    <td>BLOOD TYPE</td>
+                    <td>LAST DONATED</td>
+                    <td>PHONE NO</td>
+                    <td>EMAIL</td>
+                    <td>PASSWORD</td>
+                    <td>AREA</td>
+                </tr>
+                {% for i in x %}
+                <tr>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
+                    <td>{{i[4]}}</td>
+                    <td>{{i[5]}}</td>
+                    <td>{{i[6]}}</td>
+                    <td>{{i[7]}}</td>
+                    <td><a href="/Dedit?l={{i[5]}}, {{i[6]}}">edit</a></td>
+                    <td><a href="/Ddelete?l={{i[5]}}, {{i[6]}}">delete</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </fieldset>
+        <h3><a href="/Arecipient">RECIPIENTS DETAILS</a></h3>
+        <h2><a href="/">HOME</a></h2>
+
+    </body>
+</html>

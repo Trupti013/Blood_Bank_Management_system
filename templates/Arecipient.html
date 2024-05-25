@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>recipient details</title>
+    </head>
+    <body>
+        <h2>RECIPIENT DETAILS</h2>
+        <fieldset>
+            <table border="1">
+                <tr>
+                    <td>NAME</td>
+                    <td>DOB</td>
+                    <td>BLOOD TYPE</td>
+                    <td>PHONE NO</td>
+                    <td>EMAIL</td>
+                    <td>PASSWORD</td>
+                    <td>AREA</td>
+                </tr>
+                {% for i in x %}
+                <tr>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
+                    <td>{{i[4]}}</td>
+                    <td>{{i[5]}}</td>
+                    <td>{{i[6]}}</td>
+                    <td><a href="/Redit?l={{i[4]}}, {{i[5]}}">edit</a></td>
+                    <td><a href="/Rdelete?l={{i[4]}}, {{i[5]}}">delete</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </fieldset>
+        <h3><a href="/Adonor">DONORS DETAILS</a></h3>
+        <h2><a href="/">HOME</a></h2>
+    </body>
+</html>
