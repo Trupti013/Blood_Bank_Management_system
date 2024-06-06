@@ -15,7 +15,9 @@ The Blood Bank Management System is a web application designed to address the ch
 
 ## About Database Schema
 
-These tables store information about donors and recipients, including their personal details such as name, date of birth, blood group, contact information, and login credentials. The primary key of `email` ensure each record's uniqueness, and foreign key constraints can be added if needed to maintain data integrity. Additionally, there is an Admin table with `email` and password fields for managing both donors and recipients efficiently.
+These tables store information about donors and recipients, including their personal details such as name, date of birth, blood group, contact information, and login credentials. 
+<br>The primary key of email ensure each record's uniqueness, and foreign key constraints can be added if needed to maintain data integrity.
+<br>Additionally, there is an Admin table with email and password fields for managing both donors and recipients efficiently.
 
 ## Tech Stack
 
